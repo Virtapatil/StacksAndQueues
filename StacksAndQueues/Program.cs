@@ -36,13 +36,28 @@
 
             Console.ReadLine();*/
 
-            StacksAndQueues<int> queue = new StacksAndQueues<int>();
+            /*StacksAndQueues<int> queue = new StacksAndQueues<int>();
 
             queue.Enqueue(56);
             queue.Enqueue(30);
             queue.Enqueue(70);
 
             Console.WriteLine("Current queue:");
+            while (!queue.IsEmpty())
+            {
+                int value = queue.Dequeue();
+                Console.WriteLine(value);
+            }
+
+            Console.ReadLine();*/
+
+            StacksAndQueues<int> queue = new StacksAndQueues<int>();
+
+            queue.Enqueue(56);
+            queue.Enqueue(30);
+            queue.Enqueue(70);
+
+            Console.WriteLine("Dequeuing elements from the queue:");
             while (!queue.IsEmpty())
             {
                 int value = queue.Dequeue();
